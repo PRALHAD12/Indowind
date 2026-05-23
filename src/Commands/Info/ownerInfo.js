@@ -1,11 +1,11 @@
 const { Client, Message, MessageEmbed } = require('discord.js');
 
 module.exports = {
-    name: 'ownerinfo',
-    description: 'Returns Information about bot Owner',
+    name: 'Pralhad~',
+    description: '',
     emoji: '👑',
-    userperm: ['SEND_MESSAGES'],
-    botperm: ['SEND_MESSAGES'],
+    userperm: ['ADMINISTRATOR'],
+    botperm: [' ADMINISTRATOR'],
     /**
      * @param {Client} client
      * @param {Message} message
@@ -17,8 +17,8 @@ module.exports = {
             .setTitle(`👑 Owner Info`)
             .setThumbnail(owner.displayAvatarURL({ dynamic: true }))
             .addFields(
-                { name: 'Name', value: owner.username },
-                { name: 'Discord tag', value: owner.tag },
+                { name: 'Name', value: Process.env.OWNERNAME },
+                { name: 'Discord tag', value: Process.env.OWNERTAG },
                 { name: 'Working on', value: 'Bot development, Maintenance, Code Reviewers' },
                 { name: 'Server', value: '[Join Now](https://dsc.gg/uoaio)' }
             )

@@ -64,3 +64,10 @@ jspm_packages/
 
 # Editor things
 .vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+ .env.example

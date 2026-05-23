@@ -4,7 +4,11 @@ const chalk = require('chalk');
 const prefix = process.env.PREFIX;
 
 client.on('ready', async () => {
-    client.user.setActivity(`${prefix}help | Live at ${client.guilds.cache.size} servers`, {
+    client.user.setActivity(`${prefix}help 
+        |
+         Live at ${client.guilds.cache.size} servers`,
+         
+         {
         type: 'STREAMING',
         url: 'https://www.twitch.tv/falcxxr',
     });

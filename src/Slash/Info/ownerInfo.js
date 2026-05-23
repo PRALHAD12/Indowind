@@ -1,7 +1,7 @@
 const { CommandInteraction, Client, MessageEmbed } = require('discord.js');
 
 module.exports = {
-    name: 'ownerinfo',
+    name: 'Pralhad~',
     description: 'Returns Information about Owner',
     userperm: 'SEND_MESSAGES',
     botperm: 'SEND_MESSAGES',
@@ -15,10 +15,10 @@ module.exports = {
         const embed1 = new MessageEmbed()
             .setTitle(` Owner Info`)
             .setThumbnail(owner.displayAvatarURL({ dynamic: true }))
-            .addField(`Name`, `Gifaldy Azka`) 
-            .addField(`Discord Tag`, `Falcxxdev#0001`) // credit to real owner - uo
+            .addField(`Name`, `Pralhad~`) // credit to real owner - uo
+            .addField(`Discord Tag`, `pralhad7`) // credit to real owner - uo
             .addField(`Working on`, `Bot Development, Website Development, Feature Development`)
-            .addField(`Location`, `Bandung, Indonesia`)
+            .addField(`Location`, `Maharashtra, India`)
             .setColor('PURPLE');
 
         interaction.followUp({ embeds: [embed1] });
