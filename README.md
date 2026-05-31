@@ -211,6 +211,7 @@ All major commands are also available as slash commands (`/command`), including:
 
 ---
 
+invite bot to your server
 ## License
 
 MIT
